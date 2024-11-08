@@ -1,0 +1,2 @@
+(library
+ (name cow_of_ocaml))

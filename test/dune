@@ -1,0 +1,2 @@
+(test
+ (name test_cow_of_ocaml))

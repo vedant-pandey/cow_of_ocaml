@@ -1,0 +1,4 @@
+(executable
+ (public_name cow_of_ocaml)
+ (name main)
+ (libraries cow_of_ocaml))
