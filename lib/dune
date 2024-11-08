@@ -1,2 +1,6 @@
 (library
- (name cow_of_ocaml))
+ (name cow_of_ocaml)
+ (libraries core fmt zarith)
+ (inline_tests)
+ (preprocess
+  (pps ppx_jane)))
