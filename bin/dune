@@ -3,5 +3,5 @@
  (name main)
  (libraries cow_of_ocaml core core_bench)
  (preprocess
-  (pps ppx_jane))
+  (pps ppx_jane ppx_let))
  (link_flags -linkall))

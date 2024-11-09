@@ -1,6 +1,6 @@
 (library
- (name BinaryExponentiation)
- (public_name cow_of_ocaml.BinaryExponentiation)
+ (name EuclideanGCD)
+ (public_name cow_of_ocaml.EuclideanGCD)
  (libraries core core_bench zarith)
  (inline_tests)
  (preprocess
