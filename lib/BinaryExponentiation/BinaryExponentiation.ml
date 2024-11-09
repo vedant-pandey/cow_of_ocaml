@@ -26,7 +26,7 @@ module BinPow = struct
     non_bin_pow_rec_tco (Z.of_int 2) (Z.of_int 3) = Z.of_int 8
   ;;
 
-  let rec bin_pow_rec (base : Z.t) (exp : Z.t) : Z.t =
+  let[@warning "-27"] rec bin_pow_rec ?(acc = Z.of_int 1) (base : Z.t) (exp : Z.t) : Z.t =
     let open Z in
     match exp with
     | exp when exp = Z.of_int 0 -> Z.of_int 1
@@ -60,7 +60,7 @@ module BinPow = struct
   let%test "bin_pow_rec_tco 2" = bin_pow_rec_tco (Z.of_int 2) (Z.of_int 2) = Z.of_int 4
   let%test "bin_pow_rec_tco 3" = bin_pow_rec_tco (Z.of_int 2) (Z.of_int 3) = Z.of_int 8
 
-  let bin_pow_loop base exp =
+  let[@warning "-27"] bin_pow_loop ?(acc = Z.of_int 1) base exp =
     let res = ref (Z.of_int 1) in
     let exp_ref = ref exp in
     let base_ref = ref base in

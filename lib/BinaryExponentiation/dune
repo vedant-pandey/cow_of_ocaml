@@ -1,0 +1,7 @@
+(library
+ (name BinaryExponentiation)
+ (public_name cow_of_ocaml.BinaryExponentiation)
+ (libraries core fmt zarith)
+ (inline_tests)
+ (preprocess
+  (pps ppx_jane)))
