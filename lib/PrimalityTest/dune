@@ -1,0 +1,7 @@
+(library
+ (name PrimalityTest)
+ (public_name cow_of_ocaml.PrimalityTest)
+ (libraries core core_bench)
+ (inline_tests)
+ (preprocess
+  (pps ppx_jane)))
